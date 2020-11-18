@@ -1,0 +1,21 @@
+{
+  "name": "silent-refresh",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build ./src/index.html",
+    "postbuild": "cp -r public/* dist/",
+    "start": "parcel serve ./src/index.html",
+    "poststart": "cp -r public/* dist/"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "oidc-client": "^1.10.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "parcel": "^1.12.4"
+  }
+}
